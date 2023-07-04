@@ -1,0 +1,20 @@
+/* Define light mode colors */
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+  }
+  
+  /* Define dark mode colors */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #1A1A1A;
+      --text-color: #FFFFFF;
+    }
+  }
+  
+  /* Apply color variables to elements */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
